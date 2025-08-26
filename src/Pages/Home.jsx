@@ -32,7 +32,7 @@ function Home() {
 
           {/* Profile Image Bigger */}
           <motion.img
-            src="/src/assets/about.png"
+            src="https://image2url.com/images/1756224760778-f11a0bba-cc58-4abd-93f7-a3a54e1b091c.png"
             alt="Profile"
             className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-100 border-4 border-amber-400 rounded-full shadow-2xl object-cover"
             whileHover={{ scale: 1.1, rotate: 6 }}
