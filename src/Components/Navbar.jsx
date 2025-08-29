@@ -42,7 +42,7 @@ function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
           {[
-            { to: '/', label: 'Home', icon: <Home size={20} /> },
+            { to: '/Mangal98057/Portfolio', label: 'Home', icon: <Home size={20} /> },
             { to: '/about', label: 'About', icon: <Info size={20} /> },
             { to: '/contact', label: 'Contact', icon: <Mail size={20} /> },
             { to: '/project', label: 'Project', icon: <FileText size={20} /> },
@@ -99,7 +99,7 @@ function Navbar() {
             className="md:hidden bg-gray-900/95 text-white px-6 py-4 flex flex-col gap-4 border-t border-white/10"
           >
             {[
-              { to: '/', label: 'Home', icon: <Home size={20} /> },
+              { to: '/Mangal98057/Portfolio', label: 'Home', icon: <Home size={20} /> },
               { to: '/about', label: 'About', icon: <Info size={20} /> },
               { to: '/contact', label: 'Contact', icon: <Mail size={20} /> },
               { to: '/project', label: 'Project', icon: <FileText size={20} /> },
