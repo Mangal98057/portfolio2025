@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Home, Info, Mail, FileText, Moon, Sun, Menu, X, Zap } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion' // ✅ for smooth animations
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Navbar() {
   const [darkMode, setDarkMode] = useState(false)
@@ -17,24 +17,28 @@ function Navbar() {
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50">
+      {/* Main Navbar */}
       <motion.div
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center 
         rounded-2xl border border-white/20 shadow-lg 
-        backdrop-blur-md bg-white/10 dark:bg-gray-900/30"
+        backdrop-blur-lg bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 
+        dark:from-gray-900/60 dark:via-gray-800/60 dark:to-black/70"
       >
         {/* Logo / Brand */}
-        <Link to="/" className="flex items-center gap-3">
+        <Link to="/Mangal98057/Portfolio" className="flex items-center gap-3">
           <motion.div
             whileHover={{ rotate: 360, scale: 1.2 }}
             transition={{ duration: 0.6 }}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-amber-400 text-black font-extrabold text-lg shadow-md"
+            className="w-10 h-10 flex items-center justify-center rounded-full 
+            bg-gradient-to-tr from-cyan-400 to-blue-500 
+            text-black font-extrabold text-lg shadow-md"
           >
             MS
           </motion.div>
-          <span className="text-2xl font-bold text-amber-400 hover:text-amber-300 transition">
+          <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 text-transparent bg-clip-text">
             Mangal Singh
           </span>
         </Link>
@@ -54,9 +58,12 @@ function Navbar() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
-              whileHover={{ scale: 1.1, color: '#fbbf24' }}
+              whileHover={{ scale: 1.1 }}
             >
-              <Link to={item.to} className="flex items-center gap-2 transition">
+              <Link
+                to={item.to}
+                className="flex items-center gap-2 transition hover:text-cyan-400 dark:hover:text-purple-400"
+              >
                 {item.icon} {item.label}
               </Link>
             </motion.li>
@@ -88,7 +95,7 @@ function Navbar() {
         </div>
       </motion.div>
 
-      {/* Mobile Menu Dropdown with animation */}
+      {/* Mobile Menu Dropdown */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -96,7 +103,7 @@ function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
-            className="md:hidden bg-gray-900/95 text-white px-6 py-4 flex flex-col gap-4 border-t border-white/10"
+            className="md:hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white px-6 py-4 flex flex-col gap-4 border-t border-white/10 shadow-lg"
           >
             {[
               { to: '/Mangal98057/Portfolio', label: 'Home', icon: <Home size={20} /> },
@@ -115,7 +122,7 @@ function Navbar() {
                 <Link
                   to={item.to}
                   onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 hover:text-amber-300 transition"
+                  className="flex items-center gap-2 hover:text-cyan-400 dark:hover:text-purple-400 transition"
                 >
                   {item.icon} {item.label}
                 </Link>
