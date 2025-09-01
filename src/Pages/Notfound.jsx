@@ -12,7 +12,7 @@ function Notfound() {
 
       {/* Back to Home Button */}
       <Link
-        to="/Mangal98057/Portfolio"
+        to="/Mangal98057/portfolio2025"
         className="mt-6 px-6 py-3 bg-amber-400 text-black font-semibold rounded-xl shadow-md hover:bg-amber-300 transition"
       >
         Back to Home
