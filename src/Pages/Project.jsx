@@ -42,7 +42,7 @@ function Project() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col justify-center items-center px-6 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col justify-center items-center px-8 py-16">
       {/* Heading */}
       <motion.h1
         className="text-4xl md:text-5xl font-bold text-center text-amber-400 drop-shadow-lg"
@@ -54,7 +54,7 @@ function Project() {
       </motion.h1>
 
       <motion.p
-        className="text-gray-400 text-center max-w-2xl mx-auto mt-4 mb-12 text-lg"
+        className="text-gray-400 text-center max-w-2xl mx-auto mt-4 mb-13 text-lg"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}

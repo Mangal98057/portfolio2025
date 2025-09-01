@@ -28,7 +28,7 @@ function Navbar() {
         dark:from-gray-900/60 dark:via-gray-800/60 dark:to-black/70"
       >
         {/* Logo / Brand */}
-        <Link to="/Mangal98057/portfolio2025" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <motion.div
             whileHover={{ rotate: 360, scale: 1.2 }}
             transition={{ duration: 0.6 }}
@@ -46,7 +46,7 @@ function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 text-lg font-medium items-center">
           {[
-            { to: '/Mangal98057/portfolio2025', label: 'Home', icon: <Home size={20} /> },
+            { to: '/', label: 'Home', icon: <Home size={20} /> },
             { to: '/about', label: 'About', icon: <Info size={20} /> },
             { to: '/contact', label: 'Contact', icon: <Mail size={20} /> },
             { to: '/project', label: 'Project', icon: <FileText size={20} /> },
@@ -106,7 +106,7 @@ function Navbar() {
             className="md:hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white px-6 py-4 flex flex-col gap-4 border-t border-white/10 shadow-lg"
           >
             {[
-              { to: '/Mangal98057/portfolio2025', label: 'Home', icon: <Home size={20} /> },
+              { to: '/', label: 'Home', icon: <Home size={20} /> },
               { to: '/about', label: 'About', icon: <Info size={20} /> },
               { to: '/contact', label: 'Contact', icon: <Mail size={20} /> },
               { to: '/project', label: 'Project', icon: <FileText size={20} /> },
